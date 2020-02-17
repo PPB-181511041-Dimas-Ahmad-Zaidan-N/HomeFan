@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed Contoller" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="0dp"
+        android:text="ToggleButton" />
+
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleButton"
+        android:layout_marginStart="-195dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/seekBar2"
+        android:text="Lights" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switch1"
+        android:layout_marginTop="48dp"
+        android:text="speed" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="254dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="17dp"
+        android:max="3"
+        android:progress="0" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="69dp"
+        android:src="@drawable/fan2" />
+
+</RelativeLayout>
